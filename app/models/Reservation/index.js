@@ -3,8 +3,8 @@ const { Schema, model } = require("mongoose")
 
 const reservationsSchema = new Schema(
     {
-        reference: { type: String },
-        dateCheckin: { type: String },
+        dateCheckIn: { type: Date },
+        dateCheckOut: { type: Date },
         numberOfContainer: { type: String },
         idUser: {
             type: Schema.Types.ObjectId,

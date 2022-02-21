@@ -2,19 +2,7 @@ const { Schema, model } = require("mongoose")
 
 const StorageAreaSchema = new Schema(
     {
-        name: { type: String },
-        idCommunicationChannel: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: "CommunicationChannel"
-            }
-        ],
-        idBlock: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: "Block"
-            }
-        ]
+        name: { type: String }
     },
     { timestamps: true }
 )

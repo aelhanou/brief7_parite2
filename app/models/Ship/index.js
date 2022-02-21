@@ -10,19 +10,7 @@ const shipSchema = new Schema(
         idShipOwner: {
             type: Schema.Types.ObjectId,
             ref: "ShipOwner",
-        },
-        idReservation: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: "Reservation",
-            }
-        ],
-        idContainer: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: "Container",
-            }
-        ],
+        }
     },
     { timestamps: true }
 )

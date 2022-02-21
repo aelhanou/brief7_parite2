@@ -1,6 +1,5 @@
 const { CommunicationChannelModel } = require("../../models")
 
-
 const addCommunicationsChannel = async (data) => {
     try {
         let CommunicationsChannel = await CommunicationChannelModel.create(data)

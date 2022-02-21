@@ -3,10 +3,13 @@ const { Schema, model } = require("mongoose")
 const CommunicationChannelSchema = new Schema(
     {
         message: { type: String },
-        dateCreated: { type: String },
         idStorageArea: {
             type: Schema.Types.ObjectId,
             ref: "StorageArea"
+        },
+        idTruck: {
+            type: Schema.Types.ObjectId,
+            ref: "Truck"
         },
     },
     { timestamps: true }

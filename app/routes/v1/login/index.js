@@ -12,9 +12,9 @@ router.post("/login", async (req, res) => {
     if (_id && email && name) {
         token = generateToken({ _id, email, name }, secretKey, 'admin')
     }
+
     res.json(token)
 })
-
 
 
 module.exports = {

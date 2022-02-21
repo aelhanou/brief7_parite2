@@ -2,7 +2,6 @@ const { Schema, model } = require("mongoose")
 
 const BlockSchema = new Schema(
     {
-        reference: { type: String },
         idStorageArea: {
             type: Schema.Types.ObjectId,
             ref: "StorageArea"
@@ -11,12 +10,6 @@ const BlockSchema = new Schema(
             type: Schema.Types.ObjectId,
             ref: "Categories"
         },
-        idBlock_part: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: "Block_Part"
-            }
-        ],
     },
     { timestamps: true }
 )

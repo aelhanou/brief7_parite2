@@ -11,11 +11,7 @@ const ContainerSchema = new Schema(
         importStatus: { type: String },
         customFeesStatus: { type: String },
         certificat: { type: String },
-        idCustomFees: {
-            type: Schema.Types.ObjectId,
-            ref: "CustomFees"
-        },
-        idUser: {
+        idSupplier: {
             type: Schema.Types.ObjectId,
             ref: "User"
         },

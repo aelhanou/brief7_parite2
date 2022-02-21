@@ -3,14 +3,14 @@ const { Schema, model } = require("mongoose")
 
 const CustomFeesSchema = new Schema(
     {
-        montant: { type: String },
+        amount: { type: String },
         description: { type: String },
-        idContainer: [
+        idCategories: [
             {
                 type: Schema.Types.ObjectId,
-                ref: "Container"
+                ref: "Categories"
             }
-        ],
+        ]
     },
     { timestamps: true }
 )
